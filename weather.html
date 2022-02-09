@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherReport.css" />
+  </head>
+  <body>
+    <div>
+      <div id="heading">
+        <h1>Weather Report</h1>
+      </div>
+      <div id="inputBox">
+        <div>
+          <input
+            type="text"
+            id="city_name"
+            placeholder="Enter Your city Name"
+          />
+          <button onclick="dailyForcast()">Search</button>
+        </div>
+      </div>
+      <div id="weatherDetails">
+        <div id="details">
+          <div id="currentForcast"></div>
+          <div id="weeklyForcast"></div>
+        </div>
+        <div>
+          <iframe
+            width="100%"
+            height="450"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDeEKaTl6ZbHCEUjXN8Jk2EObz0vGqtZTM
+            &q=India&maptype=satellite"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="weatherReport.js"></script>
